@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid site-title">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="display-6 text-black fw-500 pt-1 pb-1 ">
+                        <a href="#">Coronavirus Disease 2019 (COVID-19)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><a href="index.html">Corona Virus</a></h3>
+                <strong>COVID</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i> How to Prepare
+                    </a>
+                </li>
+                <li>
+                    <a href="spread.html">
+                        <i class="fas fa-briefcase"></i> How it Spreads
+                    </a>
+                </li>
+                </li>
+                <li>
+                    <a href="protect.html">
+                        <i class="fas fa-question"></i> How to protect
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>COVID-19</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+
+                </div>
+            </nav>
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <p class="card-text"> COVID-19 is a new disease and we are still learning how it spreads, the severity of illness it causes, and to what extent it may spread in the world.</p>
+                </div>
+            </div>
+            <h1>How COVID-19 Spreads</h1><br>
+            <h3>Person-to-person spread</h3>
+            <br>
+            <p>The virus is thought to spread mainly from person-to-person.</p>
+            <ul>
+                <li>Between people who are in close contact with one another (within about 6 feet).</li>
+                <li>Through respiratory droplets produced when an infected person coughs or sneezes.</li>
+            </ul>
+            <p>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.
+            </p>
+
+            <div class="line"></div>
+
+            <h2>How easily the virus spreads</h2>
+            <p>How easily a virus spreads from person-to-person can vary. Some viruses are highly contagious (spread easily), like measles, while other viruses do not spread as easily. Another factor is whether the spread is sustained, spreading continually
+                without stopping.
+            </p>
+            <p>The virus that causes COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in some affected <a href="/coronavirus/2019-ncov/travelers/index.html">geographic areas</a>.
+            </p>
+            <div class="card mb-3">
+                <div class="card-body bg-warning">
+                    <p><strong>Community spread</strong> means people have been infected with the virus in an area, including some who are not sure how or where they became infected.</p>
+                </div>
+            </div>
+
+
+            <div class="line"></div>
+
+            <h2>Can someone spread the virus without being sick?</h2>
+            <ul>
+                <li>People are thought to be most contagious when they are most symptomatic (the sickest).</li>
+                <li>Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads.</li>
+            </ul>
+
+            <div class="line"></div>
+
+            <h3>Spread from contact with contaminated surfaces or objects</h3>
+            <p>It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.</p>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
